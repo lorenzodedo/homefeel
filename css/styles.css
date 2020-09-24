@@ -1,0 +1,289 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#title {
+  background-color: #6a6b80;
+  color: #fff;
+  opacity: 0.8;
+}
+
+#features {
+  background-color: white;
+  padding: 5% 10%;
+  position: relative;
+}
+
+
+body {
+  font-family: 'Montserrat-Black', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Montserrat-Black', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 45px;
+}
+
+h4 {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-style: italic;
+  color: white;
+  font-size: 18px;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.bio {
+  font-size: 20px;
+  font-weight: bold;
+  color: #283f55;
+}
+
+.bio:hover {
+    color: #0033cc;
+}
+
+.aboveabout {
+  font-size: 30px;
+  color: #283f55;
+  font-style: italic;
+  padding-bottom: 0.5%;
+}
+
+.aboutbio {
+  font-size: 20px;
+  color: grey;
+  padding: 0% 14% 2% 14%;
+}
+
+
+.image {
+  position: relative;
+}
+
+.bckimage {
+  width:100%;
+  opacity: 0.5;
+}
+
+.intro {
+  position: absolute;
+  top: 150px;
+  left: 200px;
+  right: 200px;
+  text-align: center;
+}
+
+.introS {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  right: 50px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.TopS{
+font-size: 30px;
+}
+
+.BotS {
+  font-size: 20px;
+}
+
+.BotB {
+  font-size: 19px;
+}
+
+.container {
+  padding-bottom: 0px;
+}
+
+.navbar {
+  padding: 0 0 0;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-item {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'Montserrat-light';
+}
+
+.download-but {
+  margin: 3% 5% 3% 0;
+}
+
+.title-img {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  transform: rotate(24deg);
+  right: 30%;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 5%
+}
+
+.featicon {
+  padding-bottom: 7%;
+  color: #ef8172;
+}
+
+.featicon:hover {
+  color: #ff4668;
+}
+
+@media (max-width: 991px) {
+  #title {
+    text-align: center;
+  }
+  .title-img {
+    position: static;
+    transform: rotate(0deg);
+  }
+}
+
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.testimonials-img {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
+  background-color: #ef8172;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.card {
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+
+.card-but {
+  color: white;
+  outline-color: blue;
+  background-color: blue;
+}
+
+#pricing {
+  padding: 80px;
+}
+
+.pricingcard {
+  padding: 3% 2%;
+}
+
+.pricing-header {
+  text-align: center;
+}
+
+#cta {
+  text-align: center;
+  background-color: #ff4c68;
+  padding: 6% 30%;
+}
+
+.ctah3 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+#footer {
+  text-align: center;
+  padding: 5% 30% 3%
+}
+
+.reference-img {
+  margin-bottom: 40px;
+  color: #ef8172;
+}
+
+.reference-img:hover {
+  color: red;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+#cities {
+  padding: 3% 5% 0% 5%;
+}
+
+.pics {
+  opacity: 0.6;
+  height: 190px;
+}
+
+.pics:hover {
+  opacity: 1;
+}
+
+.about {
+  font-style: italic;
+  text-align: center;
+}
