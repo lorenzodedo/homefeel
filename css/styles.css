@@ -1,275 +1,231 @@
-/* - - - - GENERAL - - - - */
-html {
-  scroll-behavior: smooth;
+
+/* - - - - CAROUSEL - - - - */
+#slider {
+    margin-bottom: 50px;
 }
 
-body {
-  font-family: 'Montserrat-Black', sans-serif;
-}
-
-h2 {
-  font-family: 'Montserrat-Black', sans-serif;
-  font-size: 3rem;
-  line-height: 1.5;
-  font-weight: bold;
-}
-
-h3 {
-  font-family: 'Montserrat-Bold', sans-serif;
-  font-style: italic;
-  color: white;
-  font-size: 45px;
-}
-
-h4 {
-  font-family: 'Montserrat-Bold', sans-serif;
-  font-style: italic;
-  color: white;
-  font-size: 18px;
-}
-
-p {
-  color: #8f8f8f;
-}
-
-/* - - - - CLASSES - - - - */
-.bio {
-  font-size: 20px;
-  font-weight: bold;
-  color: #283f55;
-}
-
-.bio:hover {
-  color: #0033cc;
-}
-
-.aboveabout {
-  font-size: 30px;
-  color: #283f55;
-  font-style: italic;
-  padding-bottom: 0.5%;
-}
-
-.aboutbio {
-  font-size: 20px;
-  color: grey;
-  padding: 0% 14% 2% 14%;
-}
-
-.image {
-  position: relative;
-}
-
-.bckimage {
-  width: 100%;
-  opacity: 0.5;
-}
-
-.intro {
-  position: absolute;
-  top: 150px;
-  left: 30px;
-  right: 30px;
-  text-align: center;
-}
-
-.container {
-  padding-bottom: 0px;
-}
-
-.navbar {
-  padding: 0 0 0;
-}
-
-.navbar-brand {
-  font-size: 1.6rem;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.nav-item {
-  font-size: 1.5rem;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-family: 'Montserrat-light';
-}
-
-.testimonials-img {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
-  opacity: 1;
-}
-
-.carousel-item {
-  padding: 7% 15%;
-}
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 25%;
-  padding: 20px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.pics {
-  opacity: 0.6;
-  height: 190px;
-}
-
-.pics:hover {
-  opacity: 1;
-}
-
-.about {
-  font-style: italic;
-  text-align: center;
-}
-
-.icons {
-  border-radius: 100%;
-  width: 50%;
-  margin-bottom: 10px;
-  opacity: 0.6;
-  height: 130px;
-}
-
-.icons:hover {
-  opacity: 1;
-}
-
-.feature-box {
-  text-align: center;
-  padding: 5%
-}
-
-/* - - - - SECTIONS - - - - */
-#title {
-  background-color: #6a6b80;
-  color: #fff;
-  opacity: 0.8;
-}
-
-#features {
-  background-color: white;
-  padding: 5% 10%;
-  position: relative;
-}
-
-#testimonials {
-  text-align: center;
-  background-color: #ccccff;
-  color: #fff;
-}
-
-#cities {
-  padding: 3% 5% 0% 5%;
-}
-
-#footer {
-  text-align: center;
-  padding: 5% 30% 3%
-}
-
-/* - - - - RESPONSIVE LAYOUT - - - - */
-/* Arrange title position */
-@media screen and (max-width: 767px) {
-  .intro {
-    position: absolute;
-    top: 70px;
-    left: 30px;
-    right: 30px;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 26px;
-  }
-
-  h4 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:989px) {
-  .intro {
-    position: absolute;
-    top: 110px;
-    left: 30px;
-    right: 30px;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 35px;
-  }
-
-  h4 {
-    font-size: 15px;
-  }
-}
-}
-
-@media screen and (min-width:990px) {
-  .intro {
-    position: absolute;
-    top: 140px;
-    left: 30px;
-    right: 30px;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 50px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-}
-
-/* Arrange icons size */
-@media screen and (max-width: 767px) {
-  .icons {
+.carousel-indicators li {
+    background-color: #17171cff;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
-    width: 30%;
-    margin-bottom: 10px;
-    opacity: 0.6;
-    height: 130px;
- }
+}
+.carousel-indicators {
+    bottom: -100px;
+}
+
+#FAQlist {
+  padding: 6% 15% 2%;
+}
+
+/* - - - - Searchbar - - - - */
+#myInput {
+  background-position: 10px 12px;
+  /* Position the search icon */
+  background-repeat: no-repeat;
+  /* Do not repeat the icon image */
+  width: 100%;
+  /* Full-width */
+  font-size: 16px;
+  /* Increase font-size */
+  padding: 12px 20px 12px 40px;
+  /* Add some padding */
+  border: 1px solid #ddd;
+  /* Add a grey border */
+  margin-bottom: 12px;
+  /* Add some space below the input */
+  font-weight: lighter;
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li {
+  margin: 0px;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  /* Add a border to all links */
+  margin-top: -1px;
+  /* Prevent double borders */
+  background-color: #f6f6f6;
+  /* Grey background color */
+  padding: 12px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove default text underline */
+  font-size: 18px;
+  /* Increase the font-size */
+  color: black;
+  /* Add a black text color */
+  display: block;
+  /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+  /* Add a hover effect to all links, except for headers */
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* - - - - FAQ - - - - */
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+ * {
+	 box-sizing: border-box;
+}
+ *::before, *::after {
+	 box-sizing: border-box;
+}
+
+ .containerFAQ {
+	 margin: 0 auto;
+	 padding: 0;
+	 width: 80%;
+}
+ .accordion .accordion-item {
+	 border-bottom: 1px solid #e5e5e5;
+}
+ .accordion .accordion-item button[aria-expanded='true'] {
+	 border-bottom: 1px solid #03b5d2;
+}
+ .accordion button {
+	 position: relative;
+	 display: block;
+	 text-align: left;
+	 width: 100%;
+	 padding: 1em 0;
+	 color: #7288a2;
+	 font-size: 1.15rem;
+	 font-weight: 400;
+	 border: none;
+	 background: none;
+	 outline: none;
+}
+ .accordion button:hover, .accordion button:focus {
+	 cursor: pointer;
+	 color: #03b5d2;
+}
+ .accordion button:hover::after, .accordion button:focus::after {
+	 cursor: pointer;
+	 color: #03b5d2;
+	 border: 1px solid #03b5d2;
+}
+ .accordion button .accordion-title {
+	 padding: 1em 1.5em 1em 0;
+}
+ .accordion button .icon {
+	 display: inline-block;
+	 position: absolute;
+	 top: 18px;
+	 right: 0;
+	 width: 22px;
+	 height: 22px;
+	 border: 1px solid;
+	 border-radius: 22px;
+}
+ .accordion button .icon::before {
+	 display: block;
+	 position: absolute;
+	 content: '';
+	 top: 9px;
+	 left: 5px;
+	 width: 10px;
+	 height: 2px;
+	 background: currentColor;
+}
+ .accordion button .icon::after {
+	 display: block;
+	 position: absolute;
+	 content: '';
+	 top: 5px;
+	 left: 9px;
+	 width: 2px;
+	 height: 10px;
+	 background: currentColor;
+}
+ .accordion button[aria-expanded='true'] {
+	 color: #03b5d2;
+}
+ .accordion button[aria-expanded='true'] .icon::after {
+	 width: 0;
+}
+ .accordion button[aria-expanded='true'] + .accordion-content {
+	 opacity: 1;
+	 max-height: 60em;
+	 transition: all 200ms linear;
+	 will-change: opacity, max-height;
+}
+ .accordion .accordion-content {
+	 opacity: 0;
+	 max-height: 0;
+	 overflow: hidden;
+	 transition: opacity 200ms linear, max-height 200ms linear;
+	 will-change: opacity, max-height;
+}
+ .accordion .accordion-content p, li {
+	 font-size: 1rem;
+	 font-weight: 300;
+	 margin: 2em 0;
+   color: #8f8f8f;
 }
 
 
-/* Makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 767px) {
-  .column {
-    width: 65%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+/* dividers */
+.heading-1 {
+  font-family: "PTSerif-Regular", serif;
+		font-size: 28px;
+		letter-spacing: 0.08em;
+		font-weight: 300;
+		color: #17171cff;
+		text-shadow: 0 1px 1px #FFFFFF;
 }
 
-@media screen and (min-width:768px) and (max-width:989px) {
-  .column {
-    width: 45%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.divider-1 {
+		border-bottom: 1px solid #96c5b0ff;
+		background-color: black;
+		height: 1px;
+		margin: 0.5em 0px 1.5em;
 }
 
-@media screen and (min-width:990px) {
-  .column {
-    width: 25%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.divider-1 span {
+		display: block;
+		width: 316px;
+		height: 1px;
+		background-color: #17171cff;
+}
+
+.divider-2 {
+		border-bottom: 1px solid #96c5b0ff;
+		background-color: black;
+		height: 1px;
+		margin: 0.5em 0px 1.5em;
+}
+
+.divider-2 span {
+		display: block;
+		width: 486px;
+		height: 1px;
+		background-color: #17171cff;
+}
+
+.dividerline {
+  padding: 0 10% 0 10%;
+}
+
+#FAQs {
+  margin-bottom: 300px;
 }
