@@ -10,9 +10,6 @@
     height: 10px;
     border-radius: 100%;
 }
-.carousel-indicators {
-    bottom: -100px;
-}
 
 #FAQlist {
   padding: 6% 15% 2%;
