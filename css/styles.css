@@ -1,12 +1,7 @@
-body {
-    background-color: lightgreen;
+body{
+  background-color: #cddadaff;
 }
-
 /* - - - - CAROUSEL - - - - */
-#slider {
-    margin-bottom: 50px;
-}
-
 .carousel-indicators li {
     background-color: #17171cff;
     width: 10px;
@@ -14,8 +9,17 @@ body {
     border-radius: 100%;
 }
 
+.carousel-indicators {
+  position: absolute;
+    bottom: -100px;
+}
+
 #FAQlist {
   padding: 6% 15% 2%;
+}
+
+#FAQs {
+  padding-bottom: 450px;
 }
 
 /* - - - - Searchbar - - - - */
@@ -203,7 +207,7 @@ form.example input[type=text] {
 
 .divider-1 span {
 		display: block;
-		width: 316px;
+		width: 444px;
 		height: 1px;
 		background-color: #17171cff;
 }
